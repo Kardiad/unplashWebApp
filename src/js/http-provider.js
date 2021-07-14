@@ -1,8 +1,7 @@
 const httpProvider = 'https://api.unsplash.com/search/collections?page=';
-const key = '&client_id=MJ5WIePFxCl3MFZNUOZFrS64tE7NEtkV48yWo2nR89Q';
 const creadorImagenes = document.querySelector('.row');
 export const conexion = async(numeroPagina, casa) =>{
-    const resp =  await fetch(`${httpProvider}${numeroPagina}&query=${casa}${key}`);
+    const resp =  await fetch(`${httpProvider}${numeroPagina}&query=${casa}&client_id=MJ5WIePFxCl3MFZNUOZFrS64tE7NEtkV48yWo2nR89Q`);
     const data = await resp.json();
     console.log(data);
     creadorImagenes.innerHTML = '';
