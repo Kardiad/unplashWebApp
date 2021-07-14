@@ -32,7 +32,7 @@ header{
     height: 25vh;
 }
 .fondo{
-    background-image: url(../assets/1.jpg);
+    background-image: url(../img/1.jpg);
     background-position-y: 30%;
     color:white;
     font-size: 0.75rem;
